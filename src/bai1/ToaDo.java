@@ -40,7 +40,7 @@ public class ToaDo {
         return x+y;
     }
 
-
+    @Override
     public String toString() {
         return
                 name + "("+ x + ","+ y + ")";
