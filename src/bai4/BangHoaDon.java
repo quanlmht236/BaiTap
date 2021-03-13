@@ -42,12 +42,11 @@ public class BangHoaDon {
         System.out.println();
         xe3.CalTax();
 
-        System.out.printf("%5s %20s %25s %20s %20s \n","Tên chủ xe","Loại xe","Dung tích","Trị Giá" ,"Thuế phải nộp");
-        System.out.println("===================================================================================================");
-        xe1.InBT();
-
-        xe2.InBT();
-        xe3.InBT();
+        System.out.printf("%5s %25s %25s %20s %25s \n","Tên chủ xe","Loại xe","Dung tích","Trị Giá" ,"Thuế phải nộp");
+        System.out.println("=============================================================================================================");
+        System.out.println(xe1.toString());
+        System.out.println(xe2.toString());
+        System.out.println(xe3.toString());
         System.out.println("STOP!!!!!");
     }
 }

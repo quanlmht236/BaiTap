@@ -1,5 +1,7 @@
 package bai4;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Vehicle {
     private String Own;
     private String Loai;
@@ -64,16 +66,11 @@ public class Vehicle {
 
     @Override
     public String toString() {
-        return "Vehicle{" +
-                "Own='" + Own + '\'' +
-                ", Loai='" + Loai + '\'' +
-                ", DungTich=" + DungTich +
-                ", Price=" + Price +
-                ", Tax=" + Tax +
-                '}';
-    }
-
-    public void InBT(){
-        System.out.printf("%4s %15s %24d %25.2f %15.2f\n ", Own ,Loai,DungTich,Price,Tax);
+        String s1 = String.format("%-29s",Own);
+        String s2 = String.format("%-24s",Loai);
+        String s3 = String.format("%-23s",DungTich);
+        String s4 = String.format("%-20.2f",Price);
+        String s5 = String.format("%-30.2f",Tax);
+        return s1+s2+s3+s4+s5;
     }
 }
