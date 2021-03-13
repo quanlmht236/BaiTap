@@ -20,12 +20,19 @@ public class Main {
 /*        System.out.println(A.chuvi());
         System.out.println(A.dientich());
         System.out.println(A.toString());*/
-        System.out.printf("%6s %5s %5s %5s %15s %20s %13s  \n"," tam giác","ma","mb","mc" ,"loại","chu vi","diện tích");
-        A.inTG();
+        System.out.printf("%6s %5s %5s %5s %15s %20s %18s  \n"," tam giác","ma","mb","mc" ,"loại","chu vi","diện tích");
+        System.out.println(A.toString());
+        System.out.println(B.toString());
+        System.out.println(C.toString());
+        System.out.println(D.toString());
+        System.out.println(E.toString());
+
+
+        /*A.inTG();
         B.inTG();
         C.inTG();
         D.inTG();
-        E.inTG();
+        E.inTG();*/
 
     }
 }

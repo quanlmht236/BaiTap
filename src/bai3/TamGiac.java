@@ -60,7 +60,7 @@ public class TamGiac {
     }
 
     public void CheckTG(){
-        if (KTTG()){setLoai(" Tam Giac Thường");
+        if (KTTG()){setLoai("Tam Giac Thường");
         if((this.ma == this.mb) && (this.mb == this.mc) && (this.mc == this.ma)){
             setLoai("Tam Giác Đều");
         }
@@ -72,21 +72,18 @@ public class TamGiac {
     }
     @Override
     public String toString() {
-        return "TamGiac "+ name +" {"+"\r\n " +
-                "  ma=" + ma + "\r\n " +
-                "  mb=" + mb + "\r\n " +
-                "  mc=" + mc + "\r\n " +
-                " "+getLoai()+"\r\n" +
-                "  Chu Vi: "+chuvi()+ "\r\n" +
-                "  Dien Tich: "+dientich()
+       KTL2();
+       CheckTG();
+       String s1 = String.format("%5s",name);
+       String s0 = String.format("%8s"," ");
+       String s2 = String.format("%-6d",this.ma);
+       String s3 = String.format("%-6d",this.mb);
+       String s4 = String.format("%-6d",this.mc);
+       String s5 = String.format("%-27s",getLoai());
+       String s6 = String.format("%-16d",chuvi());
+       String s7 = String.format("%-10.2f",dientich());
 
-                + "\r\n"+
-                '}';
-    }
-    public void inTG()
-    {
-        KTL2();
-        CheckTG();
-        System.out.printf("%5s %9d %5d %5d %23s %9d %13.2f \n", name , this.ma,this.mb,this.mc,getLoai(), chuvi(),dientich());
+
+        return s1+s0+s2+s3+s4+s5+s6+s7;
     }
 }
