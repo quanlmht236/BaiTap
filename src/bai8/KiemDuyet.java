@@ -20,7 +20,7 @@ public class KiemDuyet {
         CD5.KTCD();
         try {
             In();
-            CDList tag = new CDList(4);
+            CDList tag = new CDList(6);
             tag.add(CD1);
             tag.add(CD2);
             tag.add(CD3);
@@ -38,7 +38,6 @@ public class KiemDuyet {
             tag.sortAzTuaCd();
             In();
             System.out.println(tag.toString());
-
 
         }
         catch (Exception ex){

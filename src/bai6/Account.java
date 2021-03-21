@@ -80,7 +80,7 @@ public class Account {
     public void setName(String name) {
         this.name = name;
     }
-    public void printcurrency(){
+    public void dinhdang(){
     Locale local = new Locale("en","US");
     NumberFormat formatter = NumberFormat.getCurrencyInstance(local);
     String currency =formatter.format(getBalance());

@@ -3,8 +3,6 @@ package bai8;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Locale;
-import java.util.Arrays;
-import java.util.Collections;
 public class CDList {
     private ArrayList<CD> cDList = new ArrayList<>();
     private int maxSize;
