@@ -64,7 +64,7 @@ public class CDList {
     }
     public void sortZaPrice()
     {
-        cDList.sort((s1, s2) ->
+         cDList.sort((s1, s2) ->
         {
             if (s1.getPrice() > s2.getPrice())
                 return -1;

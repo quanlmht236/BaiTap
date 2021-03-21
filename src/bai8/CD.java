@@ -39,7 +39,6 @@ public class CD {
 //        if(tuaCD.isBlank() || tuaCD.isEmpty()) tuaCD="chưa xác định";
         TuaCD = tuaCD;
     }
-
     public int getSoBH() {
         return SoBH;
     }
