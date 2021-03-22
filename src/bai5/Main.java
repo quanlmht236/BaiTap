@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            HangThucPham SP01 = new HangThucPham("SP1","Gạo",14000,LocalDate.of(2021,3,22),
+            HangThucPham SP01 = new HangThucPham("Sp1","Gạo",14000,LocalDate.of(2021,3,22),
                     LocalDate.of(2021,4,22));
             HangThucPham SP02 = new HangThucPham("SP2","Đường",10000,LocalDate.of(2017,3,10),
                     LocalDate.of(2021,3,21));
@@ -16,7 +16,7 @@ public class Main {
             System.out.println(SP03.toString());
 
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
     }

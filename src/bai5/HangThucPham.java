@@ -19,7 +19,7 @@ public class HangThucPham {
 
     public HangThucPham(String mahang, String tenhang, float donGia, LocalDate NSX, LocalDate NHH) throws Exception {
         if(mahang.isEmpty()||mahang.isBlank()) throw new Exception(
-          "error !!! ma hang khong dc phep de rong!!!");
+          "error !!! Mã hàng không được phép để rỗng!!!");
         else Mahang = mahang;
         if (!tenhang.isBlank()||!tenhang.isBlank())
             this.Tenhang = tenhang;
